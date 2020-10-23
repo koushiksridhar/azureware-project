@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_screen4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="67dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.theparkcorp.azureware3.Screen4Activity"
+    tools:showIn="@layout/activity_screen4"
+    android:background="@color/pink1">
+
+
+    <TextView
+        android:text="Establishing Connection"
+        android:textColor="@color/pinkTri2"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/text1" />
+
+    <TextView
+        android:text="1. Turn on the Glove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/text2" />
+
+    <TextView
+        android:text="2. Press SCAN, then click the 3 dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:id="@+id/text3" />
+
+    <TextView
+        android:text="3. Device Connects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/text3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/connecting"
+        android:id="@+id/imageView2"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theparkcorp.azureware3">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screen1Activity"
+            android:label="@string/title_activity_screen1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screen2Activity"
+            android:label="@string/title_activity_screen2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screen4Activity"
+            android:label="@string/title_activity_screen4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screen6Activity"
+            android:label="@string/title_activity_screen6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Screen7Activity"
+            android:label="@string/title_activity_screen7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WarningScreen"
+            android:label="@string/title_activity_warning_screen"
+            android:parentActivityName=".Main2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.Main2" />
+        </activity>
+        <activity
+            android:name=".DataActivity"
+            android:label="@string/title_activity_data"
+            android:parentActivityName=".WarningScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.WarningScreen" />
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result"
+            android:parentActivityName=".DataActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.DataActivity" />
+        </activity>
+        <activity
+            android:name=".AnalyticActivity"
+            android:label="@string/title_activity_analytic"
+            android:parentActivityName=".ResultActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.ResultActivity" />
+        </activity>
+        <activity
+            android:name=".GraphViewActivity"
+            android:label="@string/title_activity_graph_view"
+            android:parentActivityName=".ResultActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.ResultActivity" />
+        </activity>
+        <activity
+            android:name=".Analytic0"
+            android:label="@string/title_activity_analytic0"
+            android:parentActivityName=".AnalyticActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.AnalyticActivity" />
+        </activity>
+        <activity
+            android:name=".Activity1"
+            android:label="@string/title_activity_1"
+            android:parentActivityName=".AnalyticActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.AnalyticActivity" />
+        </activity>
+        <activity
+            android:name=".Analytic2"
+            android:label="@string/title_activity_analytic2"
+            android:parentActivityName=".AnalyticActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.AnalyticActivity" />
+        </activity>
+        <activity
+            android:name=".Activity3"
+            android:label="@string/title_activity_3"
+            android:parentActivityName=".AnalyticActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.AnalyticActivity" />
+        </activity>
+        <activity
+            android:name=".Analytic4"
+            android:label="@string/title_activity_analytic4"
+            android:parentActivityName=".AnalyticActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.AnalyticActivity" />
+        </activity>
+        <activity
+            android:name=".SR1"
+            android:label="@string/title_activity_sr1"
+            android:parentActivityName=".Main2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.Main2" />
+        </activity>
+        <activity
+            android:name=".SR2"
+            android:label="@string/title_activity_sr2"
+            android:parentActivityName=".SR1"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR1" />
+        </activity>
+        <activity
+            android:name=".SR3"
+            android:label="@string/title_activity_sr3"
+            android:parentActivityName=".SR2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR2" />
+        </activity>
+        <activity
+            android:name=".SR4"
+            android:label="@string/title_activity_sr4"
+            android:parentActivityName=".SR3"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR3" />
+        </activity>
+        <activity
+            android:name=".SR5"
+            android:label="@string/title_activity_sr5"
+            android:parentActivityName=".SR4"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR4" />
+        </activity>
+        <activity
+            android:name=".SR6"
+            android:label="@string/title_activity_sr6"
+            android:parentActivityName=".SR5"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR5" />
+        </activity>
+        <activity
+            android:name=".SR7"
+            android:label="@string/title_activity_sr7"
+            android:parentActivityName=".SR6"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR6" />
+        </activity>
+        <activity
+            android:name=".SREnd"
+            android:label="@string/title_activity_srend"
+            android:parentActivityName=".SR7"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theparkcorp.azureware3.SR7" />
+        </activity>
+    </application>
+
+</manifest>

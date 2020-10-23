@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbckg2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.theparkcorp.azureware3.ResultActivity"
+    tools:showIn="@layout/activity_result">
+
+    <TextView
+        android:text="Your Tremor Rating is:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/redTri3"
+        android:gravity="center"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:id="@+id/tremRat"
+        android:gravity="center"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="End Test"
+        android:background="@drawable/rounded_button"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:onClick="toHomeScreen"
+        android:id="@+id/textView14"
+        android:layout_height="40dp"
+        android:layout_width="150dp"
+        android:layout_marginBottom="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Share Results"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/share"
+        android:background="@drawable/rounded_button"
+        android:onClick="ShareResults"
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/textView14"
+        android:layout_alignStart="@+id/textView13" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="View Analytics"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"
+        android:onClick="toNextScreen"
+        android:id="@+id/textView13"
+
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/share"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="See Graph"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_button"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:onClick="SeeGraph"
+        android:id="@+id/textView17"
+        android:layout_width="150dp"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/textView13"
+        android:layout_alignStart="@+id/textView14" />
+
+</RelativeLayout>

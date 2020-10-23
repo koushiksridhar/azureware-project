@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#1E6C9A</color>
+    <color name="colorAccent">#FF794E</color>
+    <color name="colorTrans">#18A59F</color>
+
+    <color name="red1">#F44336</color>
+    <color name="redTri2">#238795</color>
+    <color name="redTri3">#A1E232</color>
+
+    <color name="pur1">#9C27B0</color>
+    <color name="purTri2">#83EA30</color>
+    <color name="purTri3">#FFE734</color>
+
+    <color name="teal1">#009688</color>
+    <color name="tealTri2">#F19D00</color>
+    <color name="tealTri3">#EB0011</color>
+
+    <color name="pink1">#E91E63</color>
+    <color name="pinkTri2">#19c37f</color>
+    <color name="pinkTri3">#e1fb20</color>
+
+    <color name="lblue1">#339BFF</color>
+    <color name="lblueTri2">#FF6A23</color>
+    <color name="lblueTri3">#FFCB23</color>
+
+    <color name="green1">#78DD52</color>
+    <color name="greenTri2">#E66516</color>
+    <color name="greenTri3">#AB1081</color>
+
+
+    <color name="grey">#9E9E9E</color>
+    <color name="optGrey">#607D8B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="warningRed">#ff1500</color>
+    <color name="logoColor">#1D404E</color>
+
+    <array name="dot_active">
+        <item>@color/colorAccent</item>
+        <item>@color/redTri2</item>
+        <item>@color/purTri2</item>
+        <item>@color/pinkTri2</item>
+        <item>@color/greenTri2</item>
+        <item>@color/black</item>
+    </array>
+
+    <array name="dot_inactive">
+        <item>@color/optGrey</item>
+        <item>@color/optGrey</item>
+        <item>@color/optGrey</item>
+        <item>@color/optGrey</item>
+        <item>@color/optGrey</item>
+        <item>@color/optGrey</item>
+        
+
+    </array>
+
+</resources>

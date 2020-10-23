@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_analytic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbckg2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.theparkcorp.azureware3.AnalyticActivity"
+    tools:showIn="@layout/activity_analytic">
+
+
+    <TextView
+        android:text="Information about Tremors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="1 - Slight tremor"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:textColor="@color/white"
+        android:background="@drawable/optgreybutton"
+        android:textSize="25sp"
+        android:onClick="toButton1"
+        android:layout_below="@+id/button0"
+        android:layout_alignStart="@+id/button0"
+        android:layout_marginTop="16dp"
+        android:id="@+id/button1" />
+
+    <Button
+        android:text="2 - Mild Tremor"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:background="@drawable/optgreybutton"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:onClick="toButton2"
+        android:layout_below="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:layout_marginTop="19dp"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="4 - Acute Tremor"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:textColor="@color/white"
+        android:background="@drawable/optgreybutton"
+        android:textSize="25sp"
+        android:onClick="toButton4"
+        android:layout_marginTop="16dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:text="3 - Moderate Tremor"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:textColor="@color/white"
+        android:background="@drawable/optgreybutton"
+        android:textSize="25sp"
+        android:onClick="toButton3"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:text="0 - No tremor"
+        android:layout_width="250sp"
+        android:layout_height="75sp"
+        android:textColor="@color/white"
+        android:onClick="toButton0"
+        android:textSize="25sp"
+        android:background="@drawable/optgreybutton"
+        android:layout_marginTop="18dp"
+        android:id="@+id/button0"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

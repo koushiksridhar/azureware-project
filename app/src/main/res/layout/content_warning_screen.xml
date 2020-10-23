@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_warning_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbckg2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.theparkcorp.azureware3.WarningScreen"
+    tools:showIn="@layout/activity_warning_screen">
+
+
+    <TextView
+        android:text="Please wear the glove, and turn on the AzureWare Device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        app:srcCompat="@drawable/glove"
+        android:id="@+id/imageView6"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Keep your arm outstretched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="NEXT"
+        android:background="@drawable/rounded"
+        android:textSize="20sp"
+        android:onClick="nextScreen"
+        android:textColor="@color/white"
+        android:id="@+id/button2"
+        android:layout_height="75dp"
+        android:layout_width="150dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+</RelativeLayout>
